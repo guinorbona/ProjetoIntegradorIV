@@ -1,0 +1,42 @@
+/* Importações */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* * * * * * * * */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* CSS do cabeçalho das páginas no geral */
+.container_header{
+    flex-shrink: 0;
+}
+.container_navbar {
+    /* Content is centered horizontally */
+    align-items: center;
+    display: flex;
+
+    /* Reset styles */
+    list-style-type: none;
+    margin: 0;
+}
+.container_item-right {
+    /* Sticks to the right */
+    margin-left: auto;
+}
+
+/* CSS da parte principal da página Home */
+.container_main {
+    flex-grow: 1;
+}
+.title {color:blue}
+
+/* CSS do rodapé das páginas no geral */
+.container_footer {
+    flex-shrink: 0;
+}
+
+/* !!! Não mexer !!! */
+a {text-decoration: none; color: inherit;}
