@@ -14,16 +14,16 @@
     flex-shrink: 0;
 }
 .container_navbar {
-    /* Content is centered horizontally */
+    /* Conteúdo centralizado */
     align-items: center;
     display: flex;
 
-    /* Reset styles */
+    /* Estilo resetados */
     list-style-type: none;
     margin: 0;
 }
 .container_item-right {
-    /* Sticks to the right */
+    /* Menu de navegação da direita */
     margin-left: auto;
 }
 
