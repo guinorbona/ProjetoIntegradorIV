@@ -12,6 +12,7 @@
 /* CSS do cabeçalho das páginas no geral */
 .container_header{
     flex-shrink: 0;
+    background-color: #1b1b1b;
 }
 .container_navbar {
     /* Conteúdo centralizado */
