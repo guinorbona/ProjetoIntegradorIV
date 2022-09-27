@@ -37,6 +37,39 @@
     flex-shrink: 0;
 }
 
+.slider label {
+    background-color: #000;
+    bottom: 100px;
+    cursor: pointer;
+    display: block;
+    height: 100px;
+    position: absolute;
+    width: 100px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 10px;
+}
+
+.slider li:nth-child(3) label {
+    left: 10px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
 
 /* !!! Não mexer !!! */
 a {text-decoration: none; color: inherit;}
