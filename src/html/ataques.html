@@ -5,28 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>Tipos de Ataques Hackers</title>
 </head>
 <body>
     <div class="container">
         <!-- Cabeçalho da página -->
-        <header class="container_header">
-            <ul class="container_navbar">
-                <!-- Itens de navegação principal -->
-                <li>
-                    <a type="button" class="btn btn-light" href="../index.html">Home</a>
-                    <a type="button" class="btn btn-light" href="../html/documentacao.html">Documentação</a>
-                    <a type="button" class="btn btn-light" href="../html/ataques.html">Tipos de Ataques</a>
-                    <a type="button" class="btn btn-light" href="../html/proteger.html">Como se proteger</a>
-                    <a type="button" class="btn btn-light" href="../html/quemsomos.html">Quem somos</a>
-                </li>
-                <!-- Item de navegação à direita -->
-                <li class="container_item-right">
-                    <a type="button" class="btn btn-light" href="https://github.com/guilherme82nd/ProjetoIntegradorIV.git">GitHub</a>
-                </li>
-            </ul>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/documentacao.html">Documentação</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/ataques.html">Tipos de Ataques</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/proteger.html">Como se proteger</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/quemsomos.html">Quem somos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/guilherme82nd/ProjetoIntegradorIV.git">GitHub</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
         <!-- Conteúdo principal da página -->
         <main class="container_main">
@@ -39,11 +54,11 @@
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="../img/ddos.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">DDoS Attack</h5>
                         <p class="card-text">Um ataque do tipo DDoS é uma ataque por navegação. </p>
-                         <a href="../html/ddos.html" class="btn btn-primary">Veja mais sobre</a>
+                        <a href="../html/ddos.html" class="btn btn-primary">Veja mais sobre</a>
                         </div>
                     </div>
                 </div>
@@ -51,7 +66,7 @@
             <br>
             <div class="col">
                 <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="../img/port.webp" class="card-img-top" alt="...">
                     <div class="card-body">
                     <h5 class="card-title">Port Scanning Attack</h5>
                     <p class="card-text">Um ataque realizado através de portas abertas deixadas pelo usuário. </p>
@@ -62,7 +77,7 @@
             </div> <br>
             <div class="col">
                 <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="../img/ransomware.webp" class="card-img-top" alt="...">
                     <div class="card-body">
                     <h5 class="card-title">Ransomware</h5>
                     <p class="card-text">Um ataque que utiliza um malware que criptografa arquivos e sistemas. </p>
@@ -75,7 +90,7 @@
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="../img/cavalo.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">Cavalo de Tróia</h5>
                         <p class="card-text">. </p>
@@ -87,7 +102,7 @@
             <br>
             <div class="col">
                 <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="../img/bruta.png" class="card-img-top" alt="...">
                     <div class="card-body">
                     <h5 class="card-title">Ataques de força bruta</h5>
                     <p class="card-text">ocorre quando o usuário utiliza o processo de tentativa de erro intensivamente auxiliado por um computador para tentar quebrar uma senha. </p>
@@ -98,7 +113,7 @@
             </div> <br>
             <div class="col">
                 <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="../img/phishing.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                     <h5 class="card-title">Phishing</h5>
                     <p class="card-text">Parecendo uma pescaria, o phishing é uma maneira mais comum de fisgar uma vítima. </p>
@@ -111,7 +126,7 @@
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card h-100">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="../img/cryptojacking.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title">Cryptojacking</h5>
                         <p class="card-text">Umas das mais populares sem ser as criptomoedas é usar e-mails maliciosos onde podem instalar códigos. </p>
@@ -123,7 +138,7 @@
             <br>
             <div class="col">
                 <div class="card h-100">
-                    <img src="../img/ddos.jpg" class="card-img-top" alt="...">
+                    <img src="../img/zeroday.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                     <h5 class="card-title">Zero Day</h5>
                     <p class="card-text">Um ataque que ocorre através de uma vulnerabilidade de segurança de software. </p>
