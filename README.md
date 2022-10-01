@@ -1,4 +1,5 @@
 # Segurança da Informação e Proteção de Dados
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
 Projeto criado por alunos do Instituto Federal de Educação, Ciência e Tecnologia de São Paulo, Campus Campinas, cursando Técnico em Informática integrado ao ensino médio.
 
