@@ -14,18 +14,24 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Quem somos</title>
 </head>
-<body>
+<body class="d-flex h-100 text-center text-bg-dark">
     <div class="container">
         <!-- Cabeçalho da página -->
-        <header class="container_header">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
+        <header class="mb-auto">
+            <nav class="navbar navbar-dark bg-dark fixed-top">                <div class="container-fluid">
+                <!--Botão lateral(três barrinhas)-->
+                <a class="navbar-brand" href="#">S.I.P.D</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Funcionaliade das três barrinhas-->
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Navegue pelas páginas</h5>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                             </li>
@@ -38,7 +44,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="../html/proteger.html">Como se proteger</a>
                             </li>
-                            <li class="nav-item">
+                            
                                 <a class="nav-link" href="../html/quemsomos.html">Quem somos</a>
                             </li>
                             <li class="nav-item">
@@ -49,6 +55,7 @@
                 </div>
             </nav>
         </header>
+        <br><br><br>
         <!-- Conteúdo principal da página -->
         <main class="container_main">
             <div class="title">
