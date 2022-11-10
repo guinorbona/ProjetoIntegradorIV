@@ -4,7 +4,7 @@
 
 Projeto criado por alunos do Instituto Federal de Educação, Ciência e Tecnologia de São Paulo, Campus Campinas, cursando Técnico em Informática integrado ao ensino médio.
 
-A idéia do projeto surgiu durante uma aula da disciplina de Projeto Integrador IV e tem como intuito principal, informar e auxiliar pessoas com questões relacinadas a Segurança da Informação.
+A idéia do projeto surgiu durante uma aula da disciplina de Projeto Integrador IV e tem como intuito principal, informar e auxiliar pessoas com questões relacionadas a Segurança da Informação.
 ## Autores
 
 - [Brenda Ziviani](https://www.instagram.com/zivianibrenda/)
