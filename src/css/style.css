@@ -23,5 +23,12 @@
     padding-left: 5%;
     padding-right: 5%;
 }
+.box-3 {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 /* !!! Não mexer !!! */
 a {text-decoration: none; color: inherit;}
