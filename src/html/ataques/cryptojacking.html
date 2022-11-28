@@ -4,78 +4,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
     <!-- Pacote JavaScript mais Popper do Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-    <!-- CSS only -->
+    <!-- CSS do Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- CSS feito à mão -->
+    <link rel="stylesheet" href="../../css/style.css">
     <title>Cryptojacking</title>
 </head>
-<body class="d-flex h-100 text-center text-bg-dark">
-
-    <div class="container">
-        <!-- Cabeçalho da página -->
-        <header class="mb-auto">
-            <nav class="navbar navbar-dark bg-dark fixed-top">               
-                <div class="container-fluid">
-                <!--Botão lateral(três barrinhas)-->
-                <a class="navbar-brand" href="#">S.I.P.D</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                  <span class="navbar-toggler-icon"></span>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand link-dark" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <!--Funcionaliade das três barrinhas-->
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Navegue pelas páginas</h5>
-                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../documentacao.html">Documentação</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../ataques.html">Tipos de Ataques</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../proteger.html">Como se proteger</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../quemsomos.html">Quem somos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://github.com/guilherme82nd/ProjetoIntegradorIV.git">GitHub</a>
-                            </li>
-                        </ul>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link link-light" href="../../html/index.html"><i class="bi bi-house"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light" href="../../html/documentacao.html"><i class="bi bi-file-earmark-text"></i> Documentação</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light" href="../../html/ataques.html"><i class="bi bi-shield-exclamation"></i> Tipos de ataques</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light" href="../../html/proteger.html"><i class="bi bi-shield-check"></i> Como se proteger</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light" href="../../html/quemsomos.html"><i class="bi bi-people"></i> Quem somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light" href="https://github.com/guilherme82nd/ProjetoIntegradorIV" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="box-1">
+            <h1>Cryptojacking</h1>
+            <p class="fs-3"></p>
+            <!--<a class="nav-link link-light" href="https://portal.cmp.ifsp.edu.br" target="_blank">Por alunos do Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - Campus Campinas.</a>-->
+        </div>
+        <div class="box-2">
+            <div class="row row-cols-1 row-cols-md-1 g-4">
+                <div class="col">
+                    <div class="card border-dark mb-3 h-100">
+                    <!--<img src="" class="card-img-top" alt="...">-->
+                        <div class="card-body">
+                            <p class="card-text fs-4">  
+                                Com a mais nova forma de moeda digital que pode ser utilizada como troca de serviços e até dinheiro real. Onde para o usuário ter ele precisa “minerar” em seu computador usando necessariamente programas especiais a fim de resolver equações matemáticas e criptográficas, com o intuito de ganhar moedas. Com o aumento de poder de compra e fluidez  veio impulsionando as valorizações, e naturalmente onde tem lucro o crime  tem crime e com isso os hackers viram uma grande oportunidade altamente lucrativa, usando um método da computação distribuída para produzir criptomoedas, este método é conhecido como "mineração".<br><br>
+                                E com o crescimento das criptomoedas o cryptojackin é uma forma de ganhar dinheiro com o mínimo de esforço. Os hackers são capazes de sequestrar as máquinas de outros usuários com somente poucas linhas de codigos.<br><br>
+                                No meio do ano a empresa americana de segurança cibernética SonicWall fez sua atualização semestral fazendo relatório de ameaças cibernéticas, tendo um aumento global das cryptojacking  de US$ 66,7 milhões, ou 30% no primeiro semestre de 2022 segundo a empresa SonicWall.<br><br>
+                                A cryptojacking pode ser utilizada em distintas formas umas das mais populares sem ser as criptomoedas é usar e-mails maliciosos onde podem instalar códigos. Onde o usuário recebe um e-mail com um link ou anexo, ao clicar no link o computador ou dispositivo conectado a internet irá executar o código com o script do crytojacking. E o script irá funcionar sem o usuario saber.<br><br>
+                                Outro método é onde os hackers infiltram o script de criptografia em algum site ou anuncio , no momento que o usuario visitar o site infectado ou clicar no anuncio, o script sera executado automaticamente. Com esse parâmetro, nenhum código sera armazenado no computador do usuário.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </nav>
-        </header>
-        <!-- Conteúdo principal da página -->
-        <main class="container_main">
-            <div class="title">
-                <h1>Cryptojacking</h1>
-            </div><div class="card mb-3">
-                <img src="../../img/cryptojacking.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title text-dark">Cryptojacking</h5>
-                  <p class="card-text text-dark">Com a mais nova forma de moeda digital que pode ser utilizada como troca de serviços e até dinheiro real. Onde para o usuário ter ele precisa “minerar”
-                    em seu computador usando necessariamente programas especiais a fim de resolver equações matemáticas e criptográficas, com o intuito de ganhar moedas. Com o aumento de poder de compra e fluidez  veio impulsionando as valorizações, e naturalmente onde tem lucro o crime  tem crime e com isso os hackers viram uma grande oportunidade altamente lucrativa, usando um método da computação distribuída para produzir criptomoedas, este método é conhecido como "mineração".
-                       E com o crescimento das criptomoedas o cryptojackin é uma forma de ganhar dinheiro com o mínimo de esforço. Os hackers são capazes de sequestrar as máquinas de outros usuários com somente poucas linhas de codigos .
-                       No meio do ano a empresa americana de segurança cibernética SonicWall fez sua atualização semestral fazendo relatório de ameaças cibernéticas, tendo um aumento global das cryptojacking  de US$ 66,7 milhões, ou 30% no primeiro semestre de 2022 segundo a empresa SonicWall.
-                       A cryptojacking pode ser utilizada em distintas formas umas das mais populares sem ser as criptomoedas é usar e-mails maliciosos onde podem instalar códigos. Onde o usuário recebe um e-mail com um link ou anexo, ao clicar no link o computador ou dispositivo conectado a internet irá executar o código com o script do crytojacking. E o script irá funcionar sem o usuario saber.
-                       Outro método é onde os hackers infiltram o script de criptografia em algum site ou anuncio , no momento que o usuario visitar o site infectado ou clicar no anuncio, o script sera executado automaticamente. Com esse parâmetro, nenhum código sera armazenado no computador do usuario
-                   
-                </p>
-                  <p class="card-text"><small class="text-muted">referencias...</small></p>
+            </div>
+        </div>
+        <div class="box-2">
+            <p class="fs-3">Alguns vídeos para se aprofundar no assunto.</p>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card border-dark mb-3 h-100">
+                        <img src="https://i.ytimg.com/vi/Gvkl4tJnbik/maxresdefault.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">What is cryptojacking? Why criminals love this con</h5>
+                            <p class="card-text">Por: IDG TECHtalk</p>
+                            <a href="https://www.youtube.com/watch?v=Gvkl4tJnbik" class="btn btn-dark" target="_blank">Assistir</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
-        </main>
-        <!-- Rodapé da página -->
-        <footer class="container_footer"></footer>
-    </div>
+                <div class="col">
+                    <div class="card border-dark mb-3 h-100">
+                        <img src="https://i.ytimg.com/vi/Q0AJnEeb10o/maxresdefault.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CRIPTOJACKING - MINERANDO MOEDAS</h5>
+                            <p class="card-text">Por: Guia Ânonima</p>
+                            <a href="https://www.youtube.com/watch?v=Q0AJnEeb10o" class="btn btn-dark" target="_blank">Assistir</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-dark mb-3 h-100">
+                        <img src="https://i.ytimg.com/vi/d8VRUUVkbQM/mqdefault.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Como identificar “cryptojacking” e evitar que minerem cripto pelo seu computador</h5>
+                            <p class="card-text">Por: Money Times</p>
+                            <a href="https://www.youtube.com/watch?v=d8VRUUVkbQM" class="btn btn-dark" target="_blank">Assistir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

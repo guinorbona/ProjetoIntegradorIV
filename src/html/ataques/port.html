@@ -4,74 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-     <!-- Pacote JavaScript mais Popper do Bootstrap -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-    <!-- CSS only -->
+    <!-- Pacote JavaScript mais Popper do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <!-- CSS do Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- CSS feito à mão -->
+    <link rel="stylesheet" href="../../css/style.css">
     <title>Port Scanning Attack</title>
 </head>
-<body class="d-flex h-100 text-center text-bg-dark">
-
-    <div class="container">
-        <!-- Cabeçalho da página -->
-        <header class="mb-auto">
-            <nav class="navbar navbar-dark bg-dark fixed-top">               
-                <div class="container-fluid">
-                <!--Botão lateral(três barrinhas)-->
-                <a class="navbar-brand" href="#">S.I.P.D</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                  <span class="navbar-toggler-icon"></span>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand link-dark" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <!--Funcionaliade das três barrinhas-->
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Navegue pelas páginas</h5>
-                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../documentacao.html">Documentação</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../ataques.html">Tipos de Ataques</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../proteger.html">Como se proteger</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../quemsomos.html">Quem somos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://github.com/guilherme82nd/ProjetoIntegradorIV.git">GitHub</a>
-                            </li>
-                        </ul>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link link-light" href="../../html/index.html"><i class="bi bi-house"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light" href="../../html/documentacao.html"><i class="bi bi-file-earmark-text"></i> Documentação</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light" href="../../html/ataques.html"><i class="bi bi-shield-exclamation"></i> Tipos de ataques</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light" href="../../html/proteger.html"><i class="bi bi-shield-check"></i> Como se proteger</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light" href="../../html/quemsomos.html"><i class="bi bi-people"></i> Quem somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light" href="https://github.com/guilherme82nd/ProjetoIntegradorIV" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="box-1">
+            <h1>Port Scanning Attack</h1>
+            <p class="fs-3"></p>
+            <!--<a class="nav-link link-light" href="https://portal.cmp.ifsp.edu.br" target="_blank">Por alunos do Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - Campus Campinas.</a>-->
+        </div>
+        <div class="box-2">
+            <div class="row row-cols-1 row-cols-md-1 g-4">
+                <div class="col">
+                    <div class="card border-dark mb-3 h-100">
+                    <!--<img src="" class="card-img-top" alt="...">-->
+                        <div class="card-body">
+                            <p class="card-text fs-4">  
+                                Port Scanning é um ataque hacker que visa detectar pontos fracos e brechas para ter acesso aos dispositivos de suas vítimas, de uma forma lúdica é como se o invasor entrasse em um condomínio e testasse porta a porta para saber qual está aberta e trancada, podendo invadir ou não. Seguindo essa linha de raciocínio o port scanning tem como objetivo localizar “Portas abertas” em dispositivos, aplicada por diversos hackers umas das táticas mais comuns para explorar a invasão de sistemas de dispositivos.<br><br>
+                                Se um dispositivo é alvo de um ataque Port Scanning, os criminosos que estão na frente do ataque podem acessar informações importantes das vítimas, como proprietários dos serviços, quais serviços estão funcionando, quais requerem autenticação e se logins anônimos são permitidos ou não. Os criminosos enviam mensagens para portas de acesso que emitem respostas, que vão mostrar se a porta está sendo usada entre outros pontos de vulnerabilidade.<br><br>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </nav>
-        </header>
-        <!-- Conteúdo principal da página -->
-        <main class="container_main">
-            <div class="title">
-                <h1>Port Scanning Attack</h1>
-            </div><div class="card mb-3">
-                <img src="../../img/port.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title text-dark">Port Scanning Attack</h5>
-                  <p class="card-text text-dark">Port Scan ou Port Scanning é um ataque realizado através de portas abertas deixadas pelo usuário, fazendo com que o hacker tenha facilidade de invadir um servidor. O hacker envia um comando ao servidor para saber se existem portas abertas, e o comando retorna se estão abertas ou não.
-
-
-                </p>
-                  <p class="card-text"><small class="text-muted">referencias...</small></p>
+            </div>
+        </div>
+        <div class="box-2">
+            <p class="fs-3">Alguns vídeos para se aprofundar no assunto.</p>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card border-dark mb-3 h-100">
+                        <img src="https://i.ytimg.com/vi/zWAmutv21yw/maxresdefault.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ransomware (O Malware mais popular do momento) // Dicionário do Programador</h5>
+                            <p class="card-text">Por: Código Fonte TV</p>
+                            <a href="https://www.youtube.com/watch?v=zWAmutv21yw" class="btn btn-dark" target="_blank">Assistir</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
-        </main>
-        <!-- Rodapé da página -->
-        <footer class="container_footer"></footer>
-    </div>
+                <div class="col">
+                    <div class="card border-dark mb-3 h-100">
+                        <img src="https://i.ytimg.com/vi/ya7dZq5Tfek/maxresdefault.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">RANSOMWARE</h5>
+                            <p class="card-text">Por: Dicionário de Informática</p>
+                            <a href="https://www.youtube.com/watch?v=ya7dZq5Tfek" class="btn btn-dark" target="_blank">Assistir</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-dark mb-3 h-100">
+                        <img src="https://i.ytimg.com/vi/x9PgxTSbo0o/maxresdefault.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">RANSOMWARE: o que é e COMO SE PROTEGER?</h5>
+                            <p class="card-text">Por: Starti</p>
+                            <a href="https://www.youtube.com/watch?v=x9PgxTSbo0o" class="btn btn-dark" target="_blank">Assistir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
